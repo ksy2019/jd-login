@@ -70,7 +70,7 @@ class jd:
         dataUrl = "https://iv.jd.com/slide/s.html?d="+encodeGJ+"&c="+self.challenge+"&w=278&appId=1604ebb2287&scene=login&product=click-bind-suspend&e=D5FI6BZO2XIN5ZMAFSFGM5OTZWSRUMREDLRVAGFNNWGPVTKZN2TDV53Q32SCAEXXGA5N7N7LEEUYOWE7WJHSZDBXGQ&s=6991150360936174813&o=wft_fapiaoqwe&o1=0&u=https%3A%2F%2Fpassport.jd.com%2Fnew%2Flogin.aspx%3FReturnUrl%3Dhttps%253A%252F%252Fwww.jd.com%252F&lang=zh_CN&callback=jsonp_0583799690037224"
         # print('结果',dataUrl)
         # 延时成功率较高
-        time.sleep(6)
+        time.sleep(7)
         r = self.r.get(dataUrl)
         r = r.text.replace("jsonp_0583799690037224(",'');
         r = json.loads(r.replace(")",''));
