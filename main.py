@@ -36,7 +36,7 @@ class jd:
         :param template: 模板即需要找到的图
         :return: 返回最佳匹配及其最差匹配和对应的坐标
         """
-        template = cv2.imread('E:/Python_project/JD_slide/img/template.png', 0)
+        template = cv2.imread('./img/template.png', 0)
         # //灰度
         ret,template = cv2.threshold(template,20,100,cv2.THRESH_BINARY_INV)
         w, h = template.shape[::-1]

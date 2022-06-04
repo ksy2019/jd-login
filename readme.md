@@ -2,6 +2,6 @@
 
 version: py3
 
-pip install 
+pip install -r requirements.txt
 
 py main.py
